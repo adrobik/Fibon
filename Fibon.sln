@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.12
+VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8A0DD8FC-4167-48D5-BAED-0EB6D158B8ED}"
 EndProject
@@ -10,9 +10,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fibon.Service", "src\Fibon.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fibon.Messages", "src\Fibon.Messages\Fibon.Messages.csproj", "{26A631F8-11CF-48E6-99AE-909296B2772B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1B8CF8CD-D55A-4B0A-AEE0-2C44376D2421}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{31FA2789-6CDB-4BA2-B390-ACECC0824CF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibon.Tests", "tests\Fibon.Tests\Fibon.Tests.csproj", "{A9692A6C-9D07-41D0-A074-590704610A6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fibon.Tests", "tests\Fibon.Tests\Fibon.Tests.csproj", "{31F54862-1799-4191-A891-3C22D438EB2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{5869EEC9-E84B-46FF-867F-E0C5FF96C6FB}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\buildImages.sh = scripts\buildImages.sh
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,18 +65,18 @@ Global
 		{26A631F8-11CF-48E6-99AE-909296B2772B}.Release|x64.Build.0 = Release|Any CPU
 		{26A631F8-11CF-48E6-99AE-909296B2772B}.Release|x86.ActiveCfg = Release|Any CPU
 		{26A631F8-11CF-48E6-99AE-909296B2772B}.Release|x86.Build.0 = Release|Any CPU
-		{A9692A6C-9D07-41D0-A074-590704610A6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A9692A6C-9D07-41D0-A074-590704610A6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A9692A6C-9D07-41D0-A074-590704610A6B}.Debug|x64.ActiveCfg = Debug|x64
-		{A9692A6C-9D07-41D0-A074-590704610A6B}.Debug|x64.Build.0 = Debug|x64
-		{A9692A6C-9D07-41D0-A074-590704610A6B}.Debug|x86.ActiveCfg = Debug|x86
-		{A9692A6C-9D07-41D0-A074-590704610A6B}.Debug|x86.Build.0 = Debug|x86
-		{A9692A6C-9D07-41D0-A074-590704610A6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A9692A6C-9D07-41D0-A074-590704610A6B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A9692A6C-9D07-41D0-A074-590704610A6B}.Release|x64.ActiveCfg = Release|x64
-		{A9692A6C-9D07-41D0-A074-590704610A6B}.Release|x64.Build.0 = Release|x64
-		{A9692A6C-9D07-41D0-A074-590704610A6B}.Release|x86.ActiveCfg = Release|x86
-		{A9692A6C-9D07-41D0-A074-590704610A6B}.Release|x86.Build.0 = Release|x86
+		{31F54862-1799-4191-A891-3C22D438EB2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31F54862-1799-4191-A891-3C22D438EB2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31F54862-1799-4191-A891-3C22D438EB2D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{31F54862-1799-4191-A891-3C22D438EB2D}.Debug|x64.Build.0 = Debug|Any CPU
+		{31F54862-1799-4191-A891-3C22D438EB2D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{31F54862-1799-4191-A891-3C22D438EB2D}.Debug|x86.Build.0 = Debug|Any CPU
+		{31F54862-1799-4191-A891-3C22D438EB2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31F54862-1799-4191-A891-3C22D438EB2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31F54862-1799-4191-A891-3C22D438EB2D}.Release|x64.ActiveCfg = Release|Any CPU
+		{31F54862-1799-4191-A891-3C22D438EB2D}.Release|x64.Build.0 = Release|Any CPU
+		{31F54862-1799-4191-A891-3C22D438EB2D}.Release|x86.ActiveCfg = Release|Any CPU
+		{31F54862-1799-4191-A891-3C22D438EB2D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,6 +85,6 @@ Global
 		{C4E4A5C3-D3CB-4E91-859E-D5ABDB42F6F5} = {8A0DD8FC-4167-48D5-BAED-0EB6D158B8ED}
 		{4DE01154-17A6-4B2A-8BD2-2B254764651E} = {8A0DD8FC-4167-48D5-BAED-0EB6D158B8ED}
 		{26A631F8-11CF-48E6-99AE-909296B2772B} = {8A0DD8FC-4167-48D5-BAED-0EB6D158B8ED}
-		{A9692A6C-9D07-41D0-A074-590704610A6B} = {1B8CF8CD-D55A-4B0A-AEE0-2C44376D2421}
+		{31F54862-1799-4191-A891-3C22D438EB2D} = {31FA2789-6CDB-4BA2-B390-ACECC0824CF4}
 	EndGlobalSection
 EndGlobal
