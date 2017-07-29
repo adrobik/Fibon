@@ -1,5 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Fibon.Messages;
 using RawRabbit;
 
@@ -25,11 +24,6 @@ namespace Fibon.Service.Handlers
                     Number = command.Number,
                     Result = result
                 });
-        }
-
-        public Task HandleAsync(ICommand command)
-        {
-            throw new NotImplementedException();
         }
 
         private int Fib(int n)

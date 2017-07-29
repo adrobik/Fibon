@@ -4,7 +4,6 @@ namespace Fibon.Messages
 {
     public interface ICommand
     {
-         
     }
 
     public class CalculateValueCommand : ICommand
@@ -12,8 +11,10 @@ namespace Fibon.Messages
         public int Number { get; set; }
     }
 
-    public interface ICommandHandler<in T> where T: ICommand
+    public interface ICommandHandler<in T>
+        where T : ICommand
     {
-        Task HandleAsync(ICommand command);
+        Task HandleAsync(T command);
     }
+
 }
