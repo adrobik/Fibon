@@ -1,4 +1,4 @@
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Fibon.Messages;
 using Microsoft.AspNetCore.Mvc;
 using RawRabbit;
@@ -45,10 +45,5 @@ namespace Fibon.Api.Controllers
 
             return Accepted($"fib/{number}", null);
         }
-    }
-
-    public interface IRepository
-    {
-        int? Get(int number);
     }
 }
